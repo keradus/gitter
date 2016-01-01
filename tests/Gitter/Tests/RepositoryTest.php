@@ -44,7 +44,7 @@ class RepositoryTest extends \PHPUnit_Framework_TestCase
         $this->client = new Client($path);
     }
 
-    public function tearDown ()
+    public function tearDown()
     {
         \Mockery::close();
     }
@@ -487,7 +487,7 @@ class RepositoryTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('test file.txt', $diffs[0]->getFile(), 'New file name with a space in it');
         $this->assertEquals('testfile.txt', $diffs[1]->getFile(), 'Old file name');
-	}
+    }
 
     public function testIsAddingSingleStatistics ()
     {
